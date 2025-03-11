@@ -1,63 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Contact - Umesh Kandel Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+   
 </head>
-
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="videoDemo.html">Video Demo</a></li>
                 <li><a href="sitereport.html">Site Report</a></li>
-                <li><a href="videodemo.html">Video Demo</a></li>
             </ul>
         </nav>
     </header>
-    <!-- contact section -->
-    <section class="contact">
-        <h2>Contact Me</h2>
-        <p>If you have any questions or collaboration ideas, feel free to get in touch.</p>
+
+    <main>
         <div class="contact-container">
             <div class="contact-info">
-                <h3>Email</h3>
-                <p><a href="mailto:umeshkandel87@gmail.com">umeshkandel87@gmail.com</a></p>
-                <h3>Phone</h3>
-                <p>+44-7405458018</p>
-                <h3>Social Media</h3>
-                <p>
-                    <a href="https://www.linkedin.com/in/umesh-kandel-2a5256333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-                        target="_blank">LinkedIn</a> |
-                    <a href="https://github.com/umeshkandel11" target="_blank">GitHub</a>
-                </p>
+                <h1>Contact Me</h1>
+                <p>Feel free to get in touch with me. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <div>
+                            <h3>Email</h3>
+                            <p>umeshkandel87@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span>📱</span>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+44 7899 504670</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <div>
+                            <h3>Location</h3>
+                            <p>London, United Kingdom</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="contact-form  forms">
-                <h3 class="message">Send a Message</h3>
-                <form action="mailto:umeshkandel87@gmail.com" method="POST" enctype="text/plain">
-                    <label for="name">Name:</label>
+
+            <form class="contact-form" action="mailto:umeshkandel87@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
+                </div>
 
-                    <label for="email">Email:</label>
+                <div class="form-group">
+                    <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
+                </div>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
 
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </div>
-    </section>
-    <!-- Footer  section-->
-    <footer class="footer">
-        <p>&copy; 2025 Umesh. All rights reserved.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Umesh Kandel. All rights reserved.</p>
     </footer>
 </body>
-
-</html>
+</html> 
